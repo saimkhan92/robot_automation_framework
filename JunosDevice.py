@@ -52,6 +52,7 @@ class JunosDevice(object):
 
     def get_os_version(self):
         response = self.get_device_info()
+        logger.info(response)
         return response[1]["os_version"]
 
     def _retrieve_dev_info(self):
@@ -170,7 +171,8 @@ class JunosDevice(object):
         # Only telnet and serial values can be passed directly to mode.
         # In case of ssh, mode needs to be passed as a null string.
         # PyEZ does not yet support termserv-ssh. As per a recent PR,support
-        # coming very soon. Needs to be fixed in future releases post EFT-1
+        # coming very soon.
+
         if login_opts["login_mode"] == "netconf":
             self.device = Device(
                 host=login_opts["login_target"],
@@ -187,6 +189,8 @@ class JunosDevice(object):
             )
         try:
             self.device.open()
+            logger.info(self.device)
+
             return (True, "Connection to device opened")
         except ConnectAuthError as exc:
             return (False, "Authentication error: ConnectAuthError")
