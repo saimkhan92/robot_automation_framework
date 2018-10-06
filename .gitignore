@@ -4,4 +4,4 @@ output*
 report*
 .vscode/
 delete*
-__pycache__/
+__pycache__*
