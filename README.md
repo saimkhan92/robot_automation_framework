@@ -1,0 +1,1 @@
+addr_pyez.py is a demonstration that I can actually do something with pyez.  I also used it to find the bug in the pyez authentication where the username on the device disagrees with the username on the manager.

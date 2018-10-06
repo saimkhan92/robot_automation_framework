@@ -1,0 +1,5 @@
+venv/
+log*
+output*
+report*
+.vscode/
