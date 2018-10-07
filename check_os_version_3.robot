@@ -1,4 +1,5 @@
-# CHANGES: Created two new keywords for setup and teardown. Used the self created keywords for centralized setup and teardown in the settings section.
+# CHANGES: Created two new keywords for setup and teardown. Used the self created
+# keywords for centralized setup and teardown in the settings section after every test run.
 
 *** Keywords ***
 Setup Actions
@@ -13,8 +14,8 @@ Teardown Actions
 
 *** Settings ***
 Library           JunosDevice.py
-Suite Setup       Setup Actions
-Suite Teardown    Teardown Actions
+Test Setup       Setup Actions
+Test Teardown    Teardown Actions
 
 
 *** Variables ***

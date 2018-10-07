@@ -207,3 +207,23 @@ class JunosDevice(object):
             return (False, "Runtime Error: RuntimeError")
         except Exception as exc:
             return (False, f"Unspecific Error while opening device connection: {exc}")
+
+
+a = (
+    True,
+    {
+        "login_mode": "netconf",
+        "login_target": "172.16.198.31",
+        "login_user": "root",
+        "login_password": "juniper1",
+        "online": True,
+        "connected_at": "2018-10-07T22:56:50.429086Z",
+        "os_version": "18.2R1.9",
+        "device_model": "vSRX",
+        "hostname": "dcsmgrtest",
+        "device_sn": "93c207bfd0dd",
+        "connected_diff": "now",
+        "os_name": "junos",
+    },
+)
+
