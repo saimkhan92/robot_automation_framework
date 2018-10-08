@@ -4,3 +4,4 @@ venv/
 .vscode/
 delete*
 __pycache__/
+.DS_Store
