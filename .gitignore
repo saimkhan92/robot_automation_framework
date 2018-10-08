@@ -1,7 +1,6 @@
 venv/
-log*
-output*
-report*
+*.html
+*.xml
 .vscode/
 delete*
 __pycache__/
