@@ -11,6 +11,7 @@ Test Teardown    Teardown Actions
 &{login_opts}  login_mode=netconf  login_target=172.16.198.31  login_user=root  login_password=juniper1
 &{config_options}  format=set  action=merge  configuration=set system host-name new_hostname
 
+
 *** Keywords ***
 Setup Actions
     Log    Setup Actions done here
