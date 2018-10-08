@@ -1,1 +1,9 @@
-Applying Robot framework to Junos PyEZ network automation script. Testing on a vSRX.
+## vSRX automated testing using Robot Framework
+ 
+This is a stepwise demonstration of using the Robot Framework with the Juniper PyEZ Python library for automated network test validation.
+
+### Generated Logs
+![Getting Started](./images/log.png)
+
+### Generated Report
+![Getting Started](./images/report.png)
