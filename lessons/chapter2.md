@@ -88,11 +88,11 @@ The IP address of the vSRX, the username and password for login, are provided to
 >Connect Device	host=${HOST}	user=${USER}	password=${PASSWORD}
 >```
 
-Execute this script by running the below command:
+Execute this script by running the below command (note the command line variables passed using the flag --variable)
 ```
 robot --variable HOST:172.16.158.31 --variable USER:root --variable PASSWORD:juniper1 chapter2_eg1.robot
 ```
 
-If both the test-cases success, the entire test-suites passes. If if fails, then the test-case raises an Exception which displays why the test-case fails.
+If both the test-cases succeed, the entire test-suite passes. If any of them fails, then the corresponding test-case raises an Exception which displays why the test-case failed.
 
 To get a detailed report, we can also inspect the files log.html, report.html, and output.html, which are auto-generated for each run.
